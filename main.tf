@@ -37,7 +37,7 @@ data "google_compute_address" "default" {
 }
 
 module "nat-gateway" {
-  source             = "github.com/GoogleCloudPlatform/terraform-google-managed-instance-group"
+  source             = "github.com/madmod/terraform-google-managed-instance-group?ref=558d2fe"
   module_enabled     = "${var.module_enabled}"
   project            = "${var.project}"
   region             = "${var.region}"
